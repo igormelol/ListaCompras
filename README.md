@@ -18,21 +18,6 @@ Uma aplicação de lista de tarefas interativa com funcionalidades avançadas, i
 - **CSS**: Estilização da interface e controle do tema claro e escuro.
 - **JavaScript**: Funcionalidade da lista de tarefas, manipulação do DOM e lógica de filtragem.
 
-## Instalação
-
-1. **Clone o repositório**:
-
-    ```bash
-    git clone https://github.com/klebermkardel/to-do-list
-    ```
-
-2. **Acesse o diretório do projeto**:
-
-    ```bash
-    cd lista-de-tarefas
-    ```
-
-3. **Abra o arquivo `index.html` em um navegador** para visualizar a aplicação.
 
 ## Estrutura de Arquivos
 
@@ -59,19 +44,7 @@ Uma aplicação de lista de tarefas interativa com funcionalidades avançadas, i
 5. **Alternar Tema**:
    - Use o interruptor para alternar entre o modo claro e escuro.
 
-## Contribuições
-
-Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-## Contato
-
-Para dúvidas ou feedback, entre em contato com [seu-email@exemplo.com](mailto:molinacode@gmail.com).
-
----
+IgorM.L - 2024
 
 Obrigado por conferir o projeto!
 
