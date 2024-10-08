@@ -1,4 +1,4 @@
-#LISTA DE COMPRAS
+# LISTA DE COMPRAS
 
 Uma aplicação de lista de tarefas interativa com funcionalidades avançadas, incluindo filtros por prioridade, tema claro e escuro, e uma barra de progresso para visualizar o status das tarefas. Este projeto demonstra o uso de HTML, CSS e JavaScript para criar uma interface de usuário responsiva e moderna.
 
