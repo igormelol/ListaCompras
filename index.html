@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Compras 2.0</h1>
+
+            <section class="search-task">
+                <input type="text" id="search-task" placeholder="Digite para buscar...">
+            </section>
+            
+            <!-- Interruptor de tema -->
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" class="switch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+
+        <section class="task-input">
+            <input type="text" id="new-task" placeholder="Adicione um novo item sua lista...">
+            <select id="task-priority">
+                <option value="Mercado">Mercado</option>
+                <option value="Açogue">Açogue</option>
+                <option value="Padaria">Padaria</option>
+            </select>
+            <button id="add-task">Adicionar Item</button>
+        </section>
+
+        <section class="task-list">
+            <h2>Filtros</h2>
+            <div class="task-filters">
+                <button class="filter-btn" data-priority="all">Todos</button>
+                <button class="filter-btn" data-priority="Mercado">Mercado</button>
+                <button class="filter-btn" data-priority="Açogue">Açogue</button>
+                <button class="filter-btn" data-priority="Padaria">Padaria</button>
+            </div>
+            <ul id="tasks"></ul>
+        </section>
+
+        <section class="task-progress">
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <span id="progress-text">0% Concluído</span>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

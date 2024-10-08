@@ -1,0 +1,224 @@
+/* Estilos padrão (Tema Claro) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2, .task-filters {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3949ab;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#new-task {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+select {
+    width: 20%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid transparent;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Prioridade Alta */
+.high-priority {
+    border-left-color: red;
+}
+
+/* Prioridade Média */
+.medium-priority {
+    border-left-color: orange;
+}
+
+/* Prioridade Baixa */
+.low-priority {
+    border-left-color: green;
+}
+
+.search-task {
+    margin-top: 20px;
+}
+
+.search-task input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-progress {
+    margin-top: 20px;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#progress-text {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Tema Escuro */
+.dark-theme {
+    background-color: #161616;
+    color: #f4f4f4;
+}
+
+.dark-theme .container {
+    background-color: #605f5f;
+    color: #f4f4f4;
+}
+
+.dark-theme button {
+    background-color: #838080;
+    color: #f4f4f4;
+}
+
+.dark-theme button:hover {
+    background-color: #a2a2a2;
+}
+
+.dark-theme .task-list li {
+    background-color: #504e4e;
+}
+
+.dark-theme progress {
+    background-color: #9e9d9d;
+}
+
+.dark-theme .search-task input {
+    border: 2px solid #504f4f;
+}
+
+.dark-theme #progress-text {
+    color: #f4f4f4;
+}
+
+/* Estilos do Interruptor */
+.theme-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switcher input {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .switch .slider {
+    background-color: #5c6bc0;
+}
+
+input:checked + .switch .slider:before {
+    transform: translate(26px);
+}
